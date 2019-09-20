@@ -1,15 +1,18 @@
 module.exports = {
   env: {
-    es6: true,
     browser: true,
+    commonjs: true,
+    es6: true,
+    jest: true,
     node: true
   },
   extends: [
     'eslint:recommended',
+    'airbnb',
     'plugin:angular/johnpapa',
     'plugin:node/recommended',
-    'airbnb',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'prettier/react'
   ],
   globals: {
     Atomics: 'readonly',
@@ -21,6 +24,7 @@ module.exports = {
     },
     ecmaVersion: 2018,
     sourceType: 'module'
+    // sourceType: 'script'
   },
   plugins: ['prettier', 'react', 'angular', 'node'],
   rules: {

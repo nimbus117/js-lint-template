@@ -9,7 +9,7 @@
       "eslint --fix",
       "git add"
     ],
-    "src/**/*.{html,css,scss}": [
+    "src/**/*.{html,css,scss,json}": [
       "pretty-quick --staged",
       "git add"
     ]

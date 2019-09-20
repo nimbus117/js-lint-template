@@ -9,9 +9,10 @@ git init
 ### eslint, prettier and plugins to make eslint and prettier work together
 npm install --save-dev prettier eslint eslint-config-prettier eslint-plugin-prettier
 
-### airbnb style rules (includes react plugins)
-npm info "eslint-config-airbnb@latest" peerDependencies
+### airbnb style rules (with  react)
 npx install-peerdeps --dev eslint-config-airbnb
+### airbnb style rules (without react)
+npx install-peerdeps --dev eslint-config-airbnb-base
 
 ### optional plugins for node, angular, jest
 npm install --save-dev eslint-plugin-node eslint-plugin-angular eslint-plugin-jest
