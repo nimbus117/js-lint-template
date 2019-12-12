@@ -1,1 +1,9 @@
 src/serviceWorker.js
+
+# typescript project
+**/*.js
+**/*.d.ts
+
+# don't ignore eslintrc/prettier.js
+!.eslintrc.js
+!.prettierrc.js

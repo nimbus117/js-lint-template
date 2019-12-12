@@ -1,4 +1,6 @@
 module.exports = {
+  root: true,
+  parser: '@typescript-eslint/parser',
   env: {
     browser: true,
     commonjs: true,
@@ -11,6 +13,7 @@ module.exports = {
     'airbnb',
     'plugin:angular/johnpapa',
     'plugin:node/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'prettier/react'
   ],
@@ -27,10 +30,13 @@ module.exports = {
     sourceType: 'module'
     // sourceType: 'script'
   },
-  plugins: ['prettier', 'react', 'angular', 'node'],
+  plugins: ['prettier', 'react', 'angular', 'node', '@typescript-eslint'],
   rules: {
     'prettier/prettier': 'warn',
-    'react/jsx-filename-extension': ['off']
+    'react/jsx-filename-extension': ['off'],
+    "node/no-extraneous-require": ["error", {
+      "allowModules": ["aws-sdk"]
+    }],
   },
   settings: {
     react: {
