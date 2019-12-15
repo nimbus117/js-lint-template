@@ -33,7 +33,7 @@ module.exports = {
   plugins: ['prettier', 'react', 'angular', 'node', '@typescript-eslint'],
   rules: {
     'prettier/prettier': 'warn',
-    'react/jsx-filename-extension': ['off'],
+    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx']  }],
     "node/no-extraneous-require": ["error", {
       "allowModules": ["aws-sdk"]
     }],
