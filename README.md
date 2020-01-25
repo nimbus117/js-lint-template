@@ -21,7 +21,7 @@ npx install-peerdeps --dev eslint-config-airbnb-base
 npm install --save-dev eslint-plugin-node eslint-plugin-angular eslint-plugin-jest
 
 ### run eslint/prettier using git pre-commit hooks
-npm install --save-dev lint-staged husky@^2.7.0 pretty-quick
+npm install --save-dev lint-staged husky@^2.7.0
 
 ### editor setup
 Install editorconfig, elsint and prettier pluggins for your editor
