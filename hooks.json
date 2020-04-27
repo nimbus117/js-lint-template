@@ -6,10 +6,10 @@
   },
   "lint-staged": {
     "./**/*.{js,jsx}": [
-      "eslint --fix",
+      "eslint --fix"
     ],
     "./**/*.{html,css,scss,json}": [
-      "prettier --write",
+      "prettier --write"
     ]
   }
 }

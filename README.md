@@ -18,7 +18,10 @@ npx install-peerdeps --dev eslint-config-airbnb
 npx install-peerdeps --dev eslint-config-airbnb-base
 
 ### optional plugins for node, angular, jest
-npm install --save-dev eslint-plugin-node eslint-plugin-angular eslint-plugin-jest
+npm install --save-dev eslint-plugin-node eslint-plugin-angular eslint-plugin-jest eslint-plugin-react
+
+### support experimental js features
+npm install --save-dev babel-eslint
 
 ### run eslint/prettier using git pre-commit hooks
 npm install --save-dev lint-staged husky@^2.7.0

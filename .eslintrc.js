@@ -1,6 +1,7 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
+  parser: "babel-eslint",
   env: {
     browser: true,
     commonjs: true,
@@ -10,6 +11,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    "plugin:react/recommended",
     'airbnb',
     'plugin:angular/johnpapa',
     'plugin:node/recommended',
@@ -30,7 +32,7 @@ module.exports = {
     sourceType: 'module'
     // sourceType: 'script'
   },
-  plugins: ['prettier', 'react', 'angular', 'node', '@typescript-eslint'],
+  plugins: ['prettier', 'react', 'angular', 'node', '@typescript-eslint', 'react'],
   rules: {
     'prettier/prettier': 'warn',
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx']  }],
