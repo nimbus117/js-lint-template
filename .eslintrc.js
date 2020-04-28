@@ -1,7 +1,8 @@
+// delete as appropriate
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
-  parser: "babel-eslint",
+  // parser: '@typescript-eslint/parser',
+  // parser: "babel-eslint",
   env: {
     browser: true,
     commonjs: true,
